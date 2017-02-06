@@ -1,2 +1,2 @@
 # WRITE-UP
-Write up CTF on all sorts
+Write up CTF
