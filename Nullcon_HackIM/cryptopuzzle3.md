@@ -5,5 +5,12 @@ Category: Cryptography |
 300 points |
 ----------------------------------------
 
+```
+Description:
+
+Breaking Brands!
+```
+
 ```python
 ```
+
