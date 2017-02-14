@@ -15,7 +15,7 @@ Hint 2 : 'a' and 'b' both are less than 1000.
 Flag Format: flag{a,b}
 ```
 
-<img src="./cryptopuzzle2.png">
+<img src="./files/cryptopuzzle2.png">
 
 ```python
 #!/usr/bin/python
