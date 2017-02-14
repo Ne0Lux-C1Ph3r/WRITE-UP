@@ -11,12 +11,12 @@ Description:
 Breaking Brands!
 ```
 
-<img src="./image.png">
+<img src="./files/image.png">
 
 
 I used ssh_priv_key tool !
 
-<img src="./AES_crack.png">
+<img src="./files/AES_crack.png">
 
 ```
 Now we have the key !!!
@@ -71,7 +71,7 @@ I found the page 141525 and test the combination of logos for md5.
 
 ```
 
-<img src="./141525.png">
+<img src="./files/141525.png">
 
 ```
 clearTax == 8c437d9ef6c7786e9df3ac2bf223445e
