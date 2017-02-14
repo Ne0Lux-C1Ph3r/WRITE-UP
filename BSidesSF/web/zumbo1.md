@@ -16,4 +16,8 @@ Stages 2 and 3 - coming soon!
 
 ```
 
+We connect to the site.
+
+<img src="./../files/site.png">
+
 ``` php
