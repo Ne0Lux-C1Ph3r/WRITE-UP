@@ -17,8 +17,31 @@ Flag Format: flag{a,b}
 
 <img src="./files/cryptopuzzle2.png">
 
-```python
-#!/usr/bin/python
+My code is naughty !!!!!
 
+```python
+#!/usr/bin/env python
+
+q=541
+g=10
+
+a=[]
+b=[]
+
+for x in range(1000):
+    if g**x % q == 298:
+        a.append(x)
+for y in range(1000):
+    if g**y % q == 330:
+        b.append(y)
+
+print "flag{"+str(a)+","+str(b)+"}"
+
+# flag{[170, 710],[268, 808]}
+
+
+Combination of the code on the site to get the flag.
+
+flag{170,808}
 
 ```
