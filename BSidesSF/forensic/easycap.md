@@ -1,8 +1,8 @@
-Challenge: Easycap |
+Challenge: Easycap 
 ----------------------------------------
-Category: Forensic |
+Category: Forensic 
 ----------------------------------------
-40 points |
+40 points 
 ----------------------------------------
 
 
