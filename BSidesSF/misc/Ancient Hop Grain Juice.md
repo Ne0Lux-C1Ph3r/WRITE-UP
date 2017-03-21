@@ -1,8 +1,8 @@
-Challenge: Ancient Hop Grain Juice |
+Challenge: Ancient Hop Grain Juice 
 ----------------------------------------
-Category: Misc |
+Category: Misc 
 ----------------------------------------
-1 point |
+1 point 
 ----------------------------------------
 
 
