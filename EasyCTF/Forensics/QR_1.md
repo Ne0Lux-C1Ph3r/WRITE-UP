@@ -17,6 +17,6 @@ Hint: Is the image only black and white?
 File= QR1.png
 
 ```
-<img src="./../QR1.bmp">
+<img src="./../Files/QR1.bmp">
 
-<img src="./../flag.bmp">
+<img src="./../Files/flag.bmp">
