@@ -1,8 +1,8 @@
-Challenge: Easyauth |
+Challenge: Easyauth 
 ----------------------------------------
-Category: Web |
+Category: Web 
 ----------------------------------------
-30 points |
+30 points 
 ----------------------------------------
 
 ```
