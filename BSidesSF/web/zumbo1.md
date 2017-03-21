@@ -43,11 +43,11 @@ We have a problem with encoded string!!!!!
 
 We test with:
 http://zumbo-8ac445b1.ctf.bsidessf.net/%2e%2e%2f%2e%2e/code/server.py
-```
+
 
 <img src="./../files/flag1.png">
 
-``` 
+
 Bingo we have the source code and first flag !!!!!!
 
 FLAG: FIRST_FLAG_WASNT_HARD
