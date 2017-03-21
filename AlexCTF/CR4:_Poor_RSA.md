@@ -1,8 +1,8 @@
-Challenge: CR4: Poor RSA |
+Challenge: CR4: Poor RSA 
 ----------------------------------------
-Category: Cryptography |
+Category: Cryptography 
 ----------------------------------------
-200 points |
+200 points 
 ----------------------------------------
 
 
