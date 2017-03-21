@@ -35,7 +35,7 @@ http://zumbo-8ac445b1.ctf.bsidessf.net/%00/code/server.py
 file() argument 1 must be encoded string without null bytes, not unicode
 ```
 <img src="./../files/erreur_null_byte.png">
-```
+
 
 We have a problem with encoded string!!!!!
 . => %2e
