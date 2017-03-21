@@ -14,9 +14,9 @@ I just saw this QR code the other day, but couldn't tell what data it has. Can y
 
 Hint: Is the image only black and white? 
 
-File= QR1.png
+File= qr1.bmp
 
 ```
-<img src="./../Files/QR1.bmp">
+<img src="./../Files/qr1.bmp">
 
-<img src="./../Files/flag.bmp">
+<img src="./../Files/flag.png">
