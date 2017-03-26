@@ -9,5 +9,3 @@
 <a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/EasyCTF" target="_blank">EasyCTF</a>
 
 <a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/VolgaCTF" target="_blank">VolgaCTF</a>
-
-<a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/SecuriNets" target="_blank">SecuriNets</a>
