@@ -14,25 +14,25 @@ Bienvenue au défi NDH 2017.
 
 Vous trouvez une carte de visite de quelqu’un travaillant chez DenyAll, un éditeur de logiciel merveilleux qui fournit des solutions de sécurité web à l’état de l’art. Cela à l’air prometteur…
 
-<img src="./1.jpg">
+<img src="./files/1.jpg">
 
 Heureusement, vous connaissez un des experts en sécurité qui travaille chez DenyAll. Vous faites une visite des locaux et gardez les yeux bien ouverts.
 
-<img src="./2.jpg">
+<img src="./files/2.jpg">
 
 Vous tombez nez à nez avec la salle de réunion Connect. Tiens tiens, ne serait-ce pas l’inscription de la carte de visite ?
 
-<img src="./3.jpg">
+<img src="./files/3.jpg">
 
-<img src="./4.jpg">
+<img src="./files/4.jpg">
 
 Vous entrez dans la salle et vous trouvez des boulettes de papier jetées dans la poubelle…
 
-<img src="./5.jpg">
+<img src="./files/5.jpg">
 
 La curiosité est un vilain défaut, pourtant vous ouvrez les boulettes de papier. Vous tombez sur les messages suivants :
 
-<img src="./6.jpg">
+<img src="./files/6.jpg">
 
 Retranscription des boulettes de papier :
 
