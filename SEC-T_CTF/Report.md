@@ -19,9 +19,7 @@ Download: http://dl.ctf.rocks/Report.tar.gz
 Author: d3vnu11
 
 ```
-the PDF file:
-
-<img src="Files/Report.pdf">
+the PDF file in the sources files.
 
 We can see in the strings:
 
