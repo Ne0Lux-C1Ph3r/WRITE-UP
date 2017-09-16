@@ -19,6 +19,10 @@ Download: http://dl.ctf.rocks/Report.tar.gz
 Author: d3vnu11
 
 ```
+the PDF file:
+
+<img src="Files/Report.pdf">
+
 We can see in the strings:
 
 <img src="Files/image.png">
