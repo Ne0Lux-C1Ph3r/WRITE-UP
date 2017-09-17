@@ -16,8 +16,8 @@ Solves: 153
 
 Author: marceloje
 
-```
-http://zb3.me/malbolge-tools/#generator
-```
 
-<img src="../malbolge.PNG">
+http://zb3.me/malbolge-tools/#generator
+
+
+<img src="malbolge.PNG">
