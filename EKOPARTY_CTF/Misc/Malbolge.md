@@ -21,5 +21,3 @@ http://zb3.me/malbolge-tools/#generator
 ```
 
 <img src="../Files/malbolge.PNG">
-
-
