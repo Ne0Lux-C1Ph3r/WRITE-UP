@@ -2,7 +2,7 @@ Challenge: Malbolge
 ----------------------------------------
 Category: Misc
 ----------------------------------------
-389 points 
+248 points 
 ----------------------------------------
 
 ```
@@ -12,18 +12,14 @@ Malbolge
 
 misc
 
-Solves: 68
+Solves: 153
 
 Author: marceloje
 
 ```
-????????
-
-<img src="Files/Malbolge.PNG">
-
-``` shell
-????????
+http://zb3.me/malbolge-tools/#generator
 ```
 
+<img src="../Files/malbolge.PNG">
 
-???????
+
