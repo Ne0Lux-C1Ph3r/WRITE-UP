@@ -20,4 +20,4 @@ Author: marceloje
 http://zb3.me/malbolge-tools/#generator
 ```
 
-<img src="malbolge.PNG">
+<img src="../malbolge.PNG">
