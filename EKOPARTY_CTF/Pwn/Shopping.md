@@ -2,7 +2,7 @@ Challenge: Shopping
 ----------------------------------------
 Category: Pwn
 ----------------------------------------
-422 points 
+352 points 
 ----------------------------------------
 
 ```
@@ -12,19 +12,12 @@ Shopping
 
 pwn
 
-Solves: 48
+Solves: 90
 
 Author: marceloje
 
 ```
-????????
-
-<img src="Files/Shopping.PNG">
-
-``` shell
-????????
-```
 
 
-???????
+<img src="../Files/Shopping.PNG">
 
