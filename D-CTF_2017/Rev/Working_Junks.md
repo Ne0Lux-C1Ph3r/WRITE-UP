@@ -17,4 +17,4 @@ Author: Lucian Nitescu
 ```
 
 
-<img src="../Files/hint.PNG">
+<img src="./Files/hint.PNG">
