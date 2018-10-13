@@ -1,4 +1,4 @@
-<h1 class="text-center">Reversing</h1>
+<h1 align="center">Reversing</h1>
 
 
 <h3>Reversing Warmup 1 - Points: 50</h3>
