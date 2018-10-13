@@ -1,4 +1,4 @@
-<h1 style="text-align:center">Cryptography</h1>
+<h1 align="center">Cryptography</h1>
 
 
 <h3>Crypto Warmup 1 - Points: 75</h3>
