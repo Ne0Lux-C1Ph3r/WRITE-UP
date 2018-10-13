@@ -1,4 +1,4 @@
-<h1 style="text-align:center">Forensics</h1>
+<h1 align="center">Forensics</h1>
 
 
 <h3>Forensics Warmup 1 - Points: 50</h3>
