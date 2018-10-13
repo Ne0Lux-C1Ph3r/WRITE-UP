@@ -1,4 +1,4 @@
-# WRITE-UP CTF
+<h1 align="center">WRITE-UP CTF</h1>
 
 <a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/AlexCTF" target="_blank">AlexCTF</a>
 
