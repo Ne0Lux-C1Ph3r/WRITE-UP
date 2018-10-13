@@ -1,4 +1,4 @@
-<h1 class="text-center">General Skills</h1>
+<h1 align="center">General Skills</h1>
 
 
 <h3>General Warmup 1 - Points: 50</h3>
