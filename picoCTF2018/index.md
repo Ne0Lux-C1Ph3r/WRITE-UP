@@ -1,2 +1,2 @@
 
-<img src="../Files/">
+<img src="../Files/picoctf_logo.png">
