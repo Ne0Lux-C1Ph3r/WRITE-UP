@@ -186,7 +186,8 @@ Can you find the flag encoded inside this image? You can also find the file in /
 
 <img src="../Files/pico2018-special-logo.bmp"></img>
 ``` shell
-Flag: data = bytearray(open('pico2018-special-logo.bmp', 'rb').read())
+Flag: 
+data = bytearray(open('pico2018-special-logo.bmp', 'rb').read())
 lsb = ''
 for byte in data[54:]:
     lsb += str(byte & 1)
