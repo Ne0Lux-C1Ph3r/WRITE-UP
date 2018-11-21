@@ -1,4 +1,4 @@
-<p align="center"><img src="Files/ritsec-ctf18.png"></p>
+<p align="center"><img src="Files/ritsec-ctf18.png" height="50%" width="50%"></p>
 
 ``` shell
 
