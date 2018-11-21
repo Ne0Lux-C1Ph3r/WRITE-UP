@@ -45,5 +45,5 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 Interesting """ if (v6 === 1) """
 
 
-<img src="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/edit/master/RITSEC_CTF_2018/Files/pnw.png">
+<img src="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/blob/master/RITSEC_CTF_2018/Files/pwn.png">
 
