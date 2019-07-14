@@ -92,6 +92,7 @@ I need your clothes your boots and your motorcycle http://188.130.155.66:4444/Uz
 For this task, I see in the sources and in robots.txt.
 
 File: robots.txt
+
 Disallow: /*/super-secret-admin-panel
 
 Check on the page and see the sources, page login.php with 2 forms: username and password.
@@ -113,7 +114,7 @@ Flag: InnoCTF{UNCFZXnQKRahBEAvOeTWeoFaGHHUuqsP}
 That's why you need to study history http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd
 
 
-For this task, I see the word history and I think to test .git.
+For this task, I see the word history and the title and I think to test .git.
 http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
 
 Index of /HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
@@ -133,7 +134,7 @@ Index of /HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
 
 After i use gitdumper.sh for download the repo .git.
 
-``` shell
+``` python
 bash gitdumper.sh http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git/ repo
 
 root@Bl4st3r:/media/sf_D_DRIVE/innoctf/web/repo# git status
