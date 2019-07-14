@@ -28,5 +28,5 @@
 
 <a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/TAMUctf2019/index.md" target="_blank">TAMUctf2019</a>
 
-<a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/InnoCTF%202019" target="_blank">InnoCTF 2019</a>
+<a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/tree/master/InnoCTF%202019/index.md" target="_blank">InnoCTF 2019</a>
 
