@@ -116,6 +116,21 @@ That's why you need to study history http://188.130.155.66:1111/HlPTFdUftMmSJKUk
 For this task, I see the word history and I think to test .git.
 http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
 
+Index of /HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
+
+    Parent Directory
+    COMMIT_EDITMSG
+    HEAD
+    config
+    description
+    hooks/
+    index
+    info/
+    logs/
+    objects/
+    refs/
+
+
 After i use gitdumper.sh for download the repo .git.
 
 ``` shell
