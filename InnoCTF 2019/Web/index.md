@@ -118,7 +118,7 @@ http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
 
 After i use gitdumper.sh for download the repo .git.
 
-```
+``` shell
 bash gitdumper.sh http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git/ repo
 
 root@Bl4st3r:/media/sf_D_DRIVE/innoctf/web/repo# git status
