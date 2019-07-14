@@ -113,7 +113,7 @@ Flag: InnoCTF{UNCFZXnQKRahBEAvOeTWeoFaGHHUuqsP}
 That's why you need to study history http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd
 
 
-For this task, I see the word and test .git.
+For this task, I see the word history and I think to test .git.
 http://188.130.155.66:1111/HlPTFdUftMmSJKUkZwIJrjyAgDeoAVPd/.git
 
 After i use gitdumper.sh for download the repo .git.
