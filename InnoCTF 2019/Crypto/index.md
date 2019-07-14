@@ -10,7 +10,7 @@ I was walking on rails when suddenly i found this on wooden fence: I3_nase7ncam—
 
 For this task, I use https://www.dcode.fr/chiffre-rail-fence
 
-<p align="center"><img src="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/blob/master/InnoCTF%202019/Files/rf.PNG" height="50%" width="50%"></p>
+<p align="center"><img src="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/blob/master/InnoCTF%202019/Files/rf.PNG" height="100%" width="100%"></p>
 
 
 ```
