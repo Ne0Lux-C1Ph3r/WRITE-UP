@@ -126,12 +126,12 @@ asm1:
 	<+29>:	sub    eax,0x11
 	<+32>:	jmp    0x526 <asm1+57>
 	<+34>:	cmp    DWORD PTR [ebp+0x8],0x477
-	<+41>:	jne    0x520 <asm1+51> if 0x520 is greater than 0x477 ===> jump to <+51>
+	<+41>:	jne    0x520 <asm1+51> ====> if 0x520 is greater than 0x477 ===> jump to <+51>
 	<+43>:	mov    eax,DWORD PTR [ebp+0x8]
 	<+46>:	sub    eax,0x11
 	<+49>:	jmp    0x526 <asm1+57>
 	<+51>:	mov    eax,DWORD PTR [ebp+0x8]
-	<+54>:	add    eax,0x11  ===> FLAG ===> 0x610+0x11 ===> 0x621
+	<+54>:	add    eax,0x11  ====> FLAG ====> 0x610+0x11 ====> 0x621
 	<+57>:	pop    ebp
 	<+58>:	ret   
 	
