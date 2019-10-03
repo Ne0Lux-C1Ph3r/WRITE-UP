@@ -7,7 +7,7 @@
 <h3>vault-door-training - Points: 50</h3>
 Your mission is to enter Dr. Evil's laboratory and retrieve the blueprints for his Doomsday Project. The laboratory is protected by a series of locked vault doors. Each door is controlled by a computer and requires a password to open. Unfortunately, our undercover agents have not been able to obtain the secret passwords for the vault doors, but one of our junior agents obtained the source code for each vault's computer! You will need to read the source code for each level to figure out what the password is for that vault door. As a warmup, we have created a replica vault in our training facility. The source code for the training vault is here: VaultDoorTraining.java.
 
-``` python
+``` shell
 
 import java.util.*;
 
@@ -111,7 +111,31 @@ Flag: picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_55870d}
 What does asm1(0x610) return? Submit the flag as a hexadecimal value (starting with '0x'). NOTE: Your submission for this question will NOT be in the normal flag format. Source located in the directory at /problems/asm1_1_95494d904d73b330976420bc1cd763ec.
 
 ``` shell
-Flag: picoCTF{}
+
+asm1:
+	<+0>:	push   ebp
+	<+1>:	mov    ebp,esp
+	<+3>:	cmp    DWORD PTR [ebp+0x8],0x3b9
+	<+10>:	jg     0x50f <asm1+34> ====> if 0x50f is greater than 0x3b9 ===> jump to <+34>
+	<+12>:	cmp    DWORD PTR [ebp+0x8],0x1
+	<+16>:	jne    0x507 <asm1+26>
+	<+18>:	mov    eax,DWORD PTR [ebp+0x8]
+	<+21>:	add    eax,0x11
+	<+24>:	jmp    0x526 <asm1+57>
+	<+26>:	mov    eax,DWORD PTR [ebp+0x8]
+	<+29>:	sub    eax,0x11
+	<+32>:	jmp    0x526 <asm1+57>
+	<+34>:	cmp    DWORD PTR [ebp+0x8],0x477
+	<+41>:	jne    0x520 <asm1+51> if 0x520 is greater than 0x477 ===> jump to <+51>
+	<+43>:	mov    eax,DWORD PTR [ebp+0x8]
+	<+46>:	sub    eax,0x11
+	<+49>:	jmp    0x526 <asm1+57>
+	<+51>:	mov    eax,DWORD PTR [ebp+0x8]
+	<+54>:	add    eax,0x11  ===> FLAG ===> 0x610+0x11 ===> 0x621
+	<+57>:	pop    ebp
+	<+58>:	ret   
+	
+Flag: 0x621
 ```
 
 
@@ -119,7 +143,53 @@ Flag: picoCTF{}
 This vault uses for-loops and byte arrays. The source code for this vault is here: VaultDoor3.java.
 
 ``` shell
-Flag: picoCTF{}
+
+import java.util.*;
+
+class VaultDoor3 {
+    public static void main(String args[]) {
+        VaultDoor3 vaultDoor = new VaultDoor3();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter vault password: ");
+        String userInput = scanner.next();
+	String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
+	if (vaultDoor.checkPassword(input)) {
+	    System.out.println("Access granted.");
+	} else {
+	    System.out.println("Access denied!");
+        }
+    }
+
+    // Our security monitoring team has noticed some intrusions on some of the
+    // less secure doors. Dr. Evil has asked me specifically to build a stronger
+    // vault door to protect his Doomsday plans. I just *know* this door will
+    // keep all of those nosy agents out of our business. Mwa ha!
+    //
+    // -Minion #2671
+    public boolean checkPassword(String password) {
+        if (password.length() != 32) {
+            return false;
+        }
+        char[] buffer = new char[32];
+        int i;
+        for (i=0; i<8; i++) {
+            buffer[i] = password.charAt(i);
+        }
+        for (; i<16; i++) {
+            buffer[i] = password.charAt(23-i);
+        }
+        for (; i<32; i+=2) {
+            buffer[i] = password.charAt(46-i);
+        }
+        for (i=31; i>=17; i-=2) {
+            buffer[i] = password.charAt(i);
+        }
+        String s = new String(buffer);
+        return s.equals("jU5t_a_sna_3lpm11g041_u_4_m5ra46");
+    }
+}
+
+Flag: picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_150a16}
 ```
 
 
