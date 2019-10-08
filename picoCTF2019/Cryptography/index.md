@@ -147,16 +147,238 @@ Flag: picoCTF{frequency_is_c_over_lambda_lwwmuvrvab}
 <h3>b00tl3gRSA2 - Points: 400</h3>
 In RSA d is alot bigger than e, why dont we use d to encrypt instead of e? Connect with nc 2019shell1.picoctf.com 1723.
 
+
+c= 52212391697701595752040100162899116582652416194722854311586131120597019490285379299243364590694080079441959062938762846730346143721077154153061069317189641193018934325617654569039722805776724847189942892887195376920282617718484127153727437210040458445955862349994106202300885479569165998172352082542246347413
+n= 87990471752685087038269573090588618776821672271716292678061557850389955798345849920084878437621660409756676343956790611398136686779157799420814927337479064337802807838465549123102254939662822704991833503917320037580650080808068868833798137497567473704889838751185537147679870888297605865879590073518740214247
+e= 74317356347198950559673706139789001863884676217347634902554914196448345565189707045279128982981701461178590806216949672898073760216163719293534471716915293366058619078496630125427954721463933908939181082317532490304762648191257650534973577317613097759952312255083879620825511711149293750917577684566439654617
+
+
 ``` shell
-Flag: picoCTF{}
+import random
+
+############################
+## Wiener's Attack module ##
+############################
+
+# Calculates bitlength
+def bitlength(x):
+  assert x >= 0
+  n = 0
+  while x > 0:
+    n = n+1
+    x = x>>1
+  return n
+  
+# Squareroots an integer
+def isqrt(n):
+  if n < 0:
+    raise ValueError('square root not defined for negative numbers')  
+  if n == 0:
+    return 0
+  a, b = divmod(bitlength(n), 2)
+  x = 2**(a+b)
+  while True:
+    y = (x + n//x)//2
+    if y >= x:
+      return x
+    x = y
+
+# Checks if an integer has a perfect square
+def is_perfect_square(n):
+  h = n & 0xF; #last hexadecimal "digit"    
+  if h > 9:
+    return -1 # return immediately in 6 cases out of 16.
+  # Take advantage of Boolean short-circuit evaluation
+  if ( h != 2 and h != 3 and h != 5 and h != 6 and h != 7 and h != 8 ):
+    # take square root if you must
+    t = isqrt(n)
+    if t*t == n:
+      return t
+    else:
+      return -1    
+  return -1
+
+# Calculate a sequence of continued fractions
+def partial_quotiens(x, y):
+  partials = []
+  while x != 1:
+    partials.append(x // y)
+    a = y
+    b = x % y
+    x = a
+    y = b
+  #print partials
+  return partials
+
+# Helper function for convergents
+def indexed_convergent(sequence):
+  i = len(sequence) - 1
+  num = sequence[i]
+  denom = 1
+  while i > 0:
+    i -= 1
+    a = (sequence[i] * num) + denom
+    b = num
+    num = a
+    denom = b
+  #print (num, denom)
+  return (num, denom)
+
+# Calculate convergents of a  sequence of continued fractions
+def convergents(sequence):
+  c = []
+  for i in range(1, len(sequence)):
+    c.append(indexed_convergent(sequence[0:i]))
+  #print c
+  return c
+
+# Calculate `phi(N)` from `e`, `d` and `k`
+def phiN(e, d, k):
+  return ((e * d) - 1) / k
+
+# Wiener's attack, see http://en.wikipedia.org/wiki/Wiener%27s_attack for more information
+def wiener_attack(N,e):
+  (p,q,d) = (0,0,0)
+  conv=convergents(partial_quotiens(e,N))
+  for frac in conv:
+    (k,d)=frac
+    if k == 0:
+      continue
+    y = -(N - phiN(e, d, k) + 1)
+    discr = y*y - 4*N
+    if(discr>=0):
+      # since we need an integer for our roots we need a perfect squared discriminant
+      sqr_discr = is_perfect_square(discr)
+      # test if discr is positive and the roots are integers
+      if sqr_discr!=-1 and (-y+sqr_discr)%2==0:
+        p = ((-y+sqr_discr)/2)
+        q = ((-y-sqr_discr)/2)
+        return p, q, d
+  return p, q, d
+
+################################
+## End Wiener's Attack module ##
+################################
+
+print wiener_attack(n,e)
+
+
+
+#(11850494432495276726691495533500479222483389938240591726684644854827639776112493684476977400304766242810044412617799062029034834600945942220202628406668493L, 7425046461471358322756247267234703593056856585874641255976152184072662982246645777972541838811164109159246013209509764634962895352497234259132295663778179L, 65537L)
+
+
+
+import libnum
+
+p = 11850494432495276726691495533500479222483389938240591726684644854827639776112493684476977400304766242810044412617799062029034834600945942220202628406668493
+q = 7425046461471358322756247267234703593056856585874641255976152184072662982246645777972541838811164109159246013209509764634962895352497234259132295663778179
+
+phi=(p-1)*(q-1)
+d = libnum.modular.invmod(e, phi)
+print libnum.n2s(pow(c, d, n))
+
+# picoCTF{bad_1d3a5_5533202}
+
+Flag: picoCTF{bad_1d3a5_5533202}
 ```
 
 
 <h3>b00tl3gRSA3 - Points: 450</h3>
 Why use p and q when I can use more? Connect with nc 2019shell1.picoctf.com 47259.
 
+
+c= 1364904599811961431432299207381321739175672316681954485782630739167675043810206175851288052388589792271927725132698648557357341423492317034400078044724086520122041133467171061987941889275469329651493671414436660103169200702441308620637440833652768327197860146858672899772386537792750466561451180552950674532605167900294099581239357494422574812
+n= 7011066666284937964179770021985221046134481183995075844378897321466187112464189631803296154478420726308147926385185458031873030867606699140090527712100592056727307566753250610814621296295323383772042813724157811038540816563205142677326497602746909115833323489564824027958841105649767158102212095960414349313684285590928984404416843417149799293
+e= 65537
+
 ``` shell
-Flag: picoCTF{}
+
+# 34 factors with Cryptool blue
+p1=8650603061
+p2=8808788047
+p3=8915352643
+p4=8940672227
+p5=9015437741
+p6=9392357731
+p7=9995214323
+p8=10211747827
+p9=10421416543
+p10=10870824229
+p11=11107226213
+p12=11360174279
+p13=11505706111
+p14=11617556371
+p15=11684464133
+p16=11929298167
+p17=11987744983
+p18=12166146697
+p19=12578347759 
+p20=12695339399
+p21=12938827049
+p22=13879123649
+p23=14161485971
+p24=14193713749
+p25=14242362809
+p26=14266565479
+p27=14565652229
+p28=14593703821
+p29=14805142691
+p30=15275313419
+p31=15488797769
+p32=15594695183
+p33=15767061173
+p34=16034754499
+
+
+primes = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34]
+
+e = 65537
+
+def egcd(a, b):
+    if a == 0:
+        return (b, 0, 1)
+    else:
+        g, y, x = egcd(b % a, a)
+        return (g, x - (b // a) * y, y)
+
+def modinv(a, m):
+    g, x, y = egcd(a, m)
+    if g != 1:
+        raise Exception('modular inverse does not exist')
+    else:
+        return x % m
+
+
+# From https://crypto.stackexchange.com/questions/31109/rsa-enc-decryption-with-multiple-prime-modulus-using-crt
+ts = []
+xs = []
+ds = []
+
+for i in range(len(primes)):
+	ds.append(modinv(e, primes[i]-1))
+
+m = primes[0]
+
+for i in range(1, len(primes)):
+	ts.append(modinv(m, primes[i]))
+	m = m * primes[i]
+
+for i in range(len(primes)):
+	xs.append(pow((c%primes[i]), ds[i], primes[i]))
+
+x = xs[0]
+m = primes[0]
+
+for i in range(1, len(primes)):
+	x = x + m * ((xs[i] - x % primes[i]) * (ts[i-1] % primes[i]))
+	m = m * primes[i]
+
+
+print hex(x%n)[2:-1].decode("hex")
+
+# picoCTF{too_many_fact0rs_7031289}
+
+Flag: picoCTF{too_many_fact0rs_7031289}
 ```
 
 
