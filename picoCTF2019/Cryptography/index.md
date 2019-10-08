@@ -8,7 +8,9 @@ The numbers... what do they mean?
 <img src="../Files/number.png"></img>
 
 ``` shell
-Flag: picoCTF{}
+Crypto alphabetic range
+
+Flag: PICOCTF{THENUMBERSMASON}
 ```
 
 
@@ -16,7 +18,9 @@ Flag: picoCTF{}
 Cryptography can be easy, do you know what ROT13 is? cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}
 
 ``` shell
-Flag: picoCTF{}
+Crypto ROT13 of Caesar
+
+Flag: picoCTF{not_too_bad_of_a_problem}
 ```
 
 
@@ -24,15 +28,21 @@ Flag: picoCTF{}
 The one time pad can be cryptographically secure, but not when you know the key. Can you solve this? We've given you the encrypted flag, key, and a table to help UFJKXQZQUNB with the key of SOLVECRYPTO. Can you use this table to solve it?. 
 
 ``` shell
-Flag: picoCTF{}
+Crypto Vigenere
+
+Flag: picoCTF{CRYPTOISFUN}
 ```
 
 
 <h3>caesar - Points: 100</h3>
 Decrypt this message. You can find the ciphertext in /problems/caesar_0_22aa542fadadcc37b6ec6037c493ec9f on the shell server.
 
+picoCTF{jyvzzpunaolybipjvunfzpthre}
+
 ``` shell
-Flag: picoCTF{}
+Crypto ROT7 of Caesar
+
+Flag: picoCTF{crossingtherubicongysimakx}
 ```
 
 
@@ -42,23 +52,33 @@ What do the flags mean?
 <img src="../Files/flag.png"></img>
 
 ``` shell
-Flag: picoCTF{}
+Crypto Popham
+
+Flag: PICOCTF{F1AG5AND5TUFF}
 ```
 
 
 <h3>Mr-Worldwide - Points: 200</h3>
 A musician left us a message. What's it mean?
 
+picoCTF{(35.028309, 135.753082)(46.469391, 30.740883)(39.758949, -84.191605)(41.015137, 28.979530)(24.466667, 54.366669)(3.140853, 101.693207)_(9.005401, 38.763611)(-3.989038, -79.203560)(52.377956, 4.897070)(41.085651, -73.858467)(57.790001, -152.407227)(31.205753, 29.924526)}
+
 ``` shell
-Flag: picoCTF{}
+Crypto coordinate GPS
+
+Flag: picoCTF{KODIAK_ALASKA}
 ```
 
 
 <h3>Tapping - Points: 200</h3>
 Theres tapping coming in from the wires. What's it saying nc 2019shell1.picoctf.com 49914.
 
+.--. .. -.-. --- -.-. - ..-. { -- ----- .-. ... ...-- -.-. ----- -.. ...-- .---- ... ..-. ..- -. ----. ----- ...-- .---- ....- ----- ....- ....- ---.. }
+
 ``` shell
-Flag: picoCTF{}
+Crypto Morse
+
+Flag: PICOCTF{M0RS3C0D31SFUN1618996775}
 ```
 
 
