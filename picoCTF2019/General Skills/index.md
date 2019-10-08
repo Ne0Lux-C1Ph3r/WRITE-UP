@@ -118,12 +118,19 @@ Flag: picoCTF{digital_plumb3r_931b2271}
 <h3>whats-the-difference - Points: 200</h3>
 Can you spot the difference? kitters cattos. They are also available at /problems/whats-the-difference_0_00862749a2aeb45993f36cc9cf98a47a on the shell server.
 
-<img src="../Files/kitters.jpg"></img>
+BUG GITHUB FOR IMAGE kitters.jpg, page blank !!!!!
           
-<img src="../Files/cattos.jpg"></img>        
+BUG GITHUB FOR IMAGE cattos.jpg, page blank !!!!!
+
+IMPOSSIBLE OF UPLOAD IMAGES ??????????
 
 ``` shell
-Flag: picoCTF{}
+Work with diff or HxD or .....
+Tested with xor on two images but no, test differences on both images !!!
+
+70 69 63 6f 43 54 46 7b 74 68 33 79 72 33 5f 61 35 5f 64 31 66 66 33 72 33 6e 74 5f 34 73 5f 62 75 37 37 33 72 5f 34 6e 64 5f 6a 33 31 31 79 5f 61 73 6c 6b 6a 66 64 73 61 6c 6b 66 73 6c 6b 66 6c 6b 6a 64 73 66 64 73 7a 6d 7a 31 30 35 34 38 7d
+
+Flag: picoCTF{th3yr3_a5_d1ff3r3nt_4s_bu773r_4nd_j311y_aslkjfdsalkfslkflkjdsfdszmz10548}
 ```
 
 <h3>where-is-the-file - Points: 200</h3>
