@@ -118,7 +118,9 @@ Flag: picoCTF{b311a50_0r_v1gn3r3_c1ph3r0e4df52f}
 Class, take your seats! It's PRIME-time for a quiz... nc 2019shell1.picoctf.com 49989.
 
 ``` shell
-Flag: picoCTF{}
+AS LAST YEAR!!!!!!!!!!!!!!!
+
+Flag: picoCTF{wA8_th4t$_ill3aGal..o6e437df2}
 ```
 
 
