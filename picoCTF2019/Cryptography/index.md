@@ -5,7 +5,7 @@
 <h3>The Numbers - Points: 50</h3>
 The numbers... what do they mean?
 
-<img src="../Files/the_numbers.png"></img>
+<img src="../Files/number.png"></img>
 
 ``` shell
 Flag: picoCTF{}
