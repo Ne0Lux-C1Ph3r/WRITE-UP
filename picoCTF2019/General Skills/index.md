@@ -118,9 +118,9 @@ Flag: picoCTF{digital_plumb3r_931b2271}
 <h3>whats-the-difference - Points: 200</h3>
 Can you spot the difference? kitters cattos. They are also available at /problems/whats-the-difference_0_00862749a2aeb45993f36cc9cf98a47a on the shell server.
 
-<img src="../Files/kitters.jpg></img>
+<img src="../Files/kitters.jpg"></img>
           
-<img src="../Files/cattos.jpg></img>        
+<img src="../Files/cattos.jpg"></img>        
 
 ``` shell
 Flag: picoCTF{}
