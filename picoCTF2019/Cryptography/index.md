@@ -105,3 +105,10 @@ Why use p and q when I can use more? Connect with nc 2019shell1.picoctf.com 4725
 Flag: picoCTF{}
 ```
 
+
+<h3>john_pollard - Points: 500</h3>
+Sometimes RSA certificates are breakable
+
+``` shell
+Flag: picoCTF{}
+```
