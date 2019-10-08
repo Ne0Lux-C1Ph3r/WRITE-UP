@@ -85,6 +85,7 @@ Flag: PICOCTF{M0RS3C0D31SFUN1618996775}
 <h3>la cifra de - Points: 200</h3>
 I found this cipher in an old book. Can you figure out what it says? Connect with nc 2019shell1.picoctf.com 32203.
 
+
 Encrypted message:
 Ne iy nytkwpsznyg nth it mtsztcy vjzprj zfzjy rkhpibj nrkitt ltc tnnygy ysee itd tte cxjltk
 Ifrosr tnj noawde uk siyyzre, yse Bnretèwp Cousex mls hjpn xjtnbjytki xatd eisjd
@@ -133,7 +134,13 @@ Flag: picoCTF{}
 We made alot of substitutions to encrypt this. Can you decrypt it? Connect with nc 2019shell1.picoctf.com 21903.
 
 ``` shell
-Flag: picoCTF{}
+Crypto alphabetic substitution
+
+Congrats here is your flag - frequency_is_c_over_lambda_lwwmuvrvab
+-------------------------------------------------------------------------------
+Having had some time at my disposal when in london, i had visited the british museum, and made search among the books and maps in the library regarding transylvania; it had struck me that some foreknowledge of the country could hardly fail to have some importance in dealing with a nobleman of that country. i find that the district he named is in the extreme east of the country, just on the borders of three states, transylvania, moldavia and bukovina, in the midst of the carpathian mountains; one of the wildest and least known portions of europe. i was not able to light on any map or work giving the exact locality of the castle dracula, as there are no maps of this country as yet to compare with our own ordnance survey maps; but i found that bistritz, the post town named by count dracula, is a fairly well-known place. i shall enter here some of my notes, as they may refresh my memory when i talk over my travels with mina.
+
+Flag: picoCTF{frequency_is_c_over_lambda_lwwmuvrvab}
 ```
 
 
