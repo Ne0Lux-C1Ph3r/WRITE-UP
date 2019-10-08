@@ -118,10 +118,10 @@ Flag: picoCTF{digital_plumb3r_931b2271}
 <h3>whats-the-difference - Points: 200</h3>
 Can you spot the difference? kitters cattos. They are also available at /problems/whats-the-difference_0_00862749a2aeb45993f36cc9cf98a47a on the shell server.
 
-BUG GITHUB FOR IMAGE kitters.jpg, page blank !!!!!
-          
-BUG GITHUB FOR IMAGE cattos.jpg, page blank !!!!!
 
+
+BUG GITHUB FOR IMAGE kitters.jpg, page blank !!!!!      
+BUG GITHUB FOR IMAGE cattos.jpg, page blank !!!!!
 IMPOSSIBLE OF UPLOAD IMAGES ??????????
 
 ``` shell
@@ -198,42 +198,30 @@ I wrote you a song. Put it in the picoCTF{} flag format.
 Pico's a CTFFFFFFF
 my mind is waitin
 It's waitin
-
 Put my mind of Pico into This
 my flag is not found
 put This into my flag
 put my flag into Pico
-
-
 shout Pico
 shout Pico
 shout Pico
-
 My song's something
 put Pico into This
-
 Knock This down, down, down
 put This into CTF
-
 shout CTF
 my lyric is nothing
 Put This without my song into my lyric
 Knock my lyric down, down, down
-
 shout my lyric
-
 Put my lyric into This
 Put my song with This into my lyric
 Knock my lyric down
-
 shout my lyric
-
 Build my lyric up, up ,up
-
 shout my lyric
 shout Pico
 shout It
-
 Pico CTF is fun
 security is important
 Fun is fun
@@ -241,19 +229,35 @@ Put security with fun into Pico CTF
 Build Fun up
 shout fun times Pico CTF
 put fun times Pico CTF into my song
-
 build it up
-
 shout it
 shout it
-
 build it up, up
 shout it
 shout Pico
 ```
 
 ``` shell
-Flag: picoCTF{}
+Esotoric language ===> Rockstar
+
+https://codewithrockstar.com/online
+
+114
+114
+114
+111
+99
+107
+110
+114
+110
+48
+49
+49
+51
+114
+
+Flag: picoCTF{rrrocknrn0113r}
 
 ```
 
@@ -293,8 +297,43 @@ Break it down
 ```
 
 ``` shell
-Flag: picoCTF{}
+Idem that of "mus1c - Points: 300" unless with javascript, big problem !!!
+
+https://github.com/yanorestes/rockstar-py
+
+Convert the file to .rock and run rockstar-py
+
+Rocknroll = True
+Silence = False
+a_guitar = 19
+Tommy = 44
+Music = 160
+the_music = input()
+if the_music == a_guitar:
+    print("Keep on rocking!")
+    the_rhythm = input()
+    if the_rhythm - Music == False:
+        Tommy = 66
+        print(Tommy!)
+        Music = 79
+        Jamming = 78
+        print(Music!)
+        print(Jamming!)
+        Tommy = 74
+        print(Tommy!)
+        They are dazzled audiences
+        print(it!)
+        Rock = 86
+        print(it!)
+        Tommy = 73
+        print(it!)
+        break
+        print("Bring on the rock!")
+        Else print("That ain't it, Chief")
+        break
+        
+66 79 78 74 79 86 73
+
+Flag: picoCTF{BONJOVI}
 
 ```
-
-
