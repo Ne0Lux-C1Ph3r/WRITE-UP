@@ -43,11 +43,11 @@ We found this file. Recover the flag. You can also find the file in /problems/c0
 ``` shell
 Modify header, chunk IDAT and CRC.
 ``` 
-<p align="center"><img src="Files/co0.png"></p>
+<p align="center"><img src="../Files/co0.png"></p>
 
-<p align="center"><img src="Files/co1.png"></p>
+<p align="center"><img src="../Files/co1.png"></p>
 
-<p align="center"><img src="Files/mystery.png"></p>
+<p align="center"><img src="../Files/mystery.png"></p>
 
 ``` shell
 Flag: picoCTF{c0rrupt10n_1847995}
