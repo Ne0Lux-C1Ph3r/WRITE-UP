@@ -6,14 +6,23 @@
 We found this packet capture. Recover the flag. You can also find the file in /problems/shark-on-wire-1_0_13d709ec13952807e477ba1b5404e620.
 
 ``` shell
-Flag: picoCTF{}
+Response:
+Wireshark filter udp.port==8888 and see ip 10.0.0.12
+Fragment of flag letter by letter.
+
+Flag: picoCTF{StaT31355_636f6e6e}
 ``` 
 
 
 <h3>WhitePages - Points: 250</h3>
 I stopped using YellowPages and moved onto WhitePages... but the page they gave me is all blank!
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
 ``` shell
+Response:
+
 Flag: picoCTF{}
 ``` 
 
