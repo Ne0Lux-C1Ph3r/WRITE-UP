@@ -76,7 +76,22 @@ Flag: picoCTF{l0t5_0f_TAR5}
 Decode this message from the moon. You can also find the file in /problems/m00nwalk_4_bcf65d52e5462dd0b70c0e984d7d5015.
 
 ``` shell
-Flag: picoCTF{}
+For this challenge, I installed VLC, QSSTV, pavucontrol...
+Good tutorial on https://www.chonky.net/hamradio/decoding-sstv-from-a-file-on-a-linux-system
+
+Commands in many terminal:
+
+pactl load-module module-null-sink sink_name=virtual-cable
+qsstv
+pavucontrol
+vlc
+paplay -d virtual-cable message.wav
+``` 
+
+<p align="center"><img src="../Files/qsstv.png"></p>
+
+``` shell
+Flag: picoCTF{beep_boop_im_in_space}
 ``` 
 
 
@@ -84,7 +99,22 @@ Flag: picoCTF{}
 Revisit the last transmission. We think this transmission contains a hidden message. There are also some clues clue 1, clue 2, clue 3. You can also find the files in /problems/m00nwalk2_1_ee6747feaad7bc16aa5ca2743ecd9652.
 
 ``` shell
-Flag: picoCTF{}
+Same thing as m00nwalk challenge
+``` 
+<p align="center"><img src="../Files/clue1.png"></p>
+<p align="center"><img src="../Files/clue2.png"></p>
+<p align="center"><img src="../Files/clue3.png"></p>
+
+``` shell
+password hidden_stegosaurus
+Craig Anderson in The Quieter You Are The More You Can Hear
+Alan Eliasen the future boy
+
+https://futureboy.us/stegano/decinput.html
+
+message.wav with password hidden_stegosaurus
+
+Flag: picoCTF{the_answer_lies_hidden_in_plain_sight}
 ``` 
 
 
