@@ -41,13 +41,13 @@ We found this file. Recover the flag. You can also find the file in /problems/c0
 
 
 ``` shell
-Modify header, chunk IDAT and CRC.
+Modify header, chunk IHDR, chunk IDAT and CRC.
+Use pngcheck, pngtools, hex editor.
 ``` 
 <p align="center"><img src="../Files/cor0.png"></p>
 
 <p align="center"><img src="../Files/cor1.png"></p>
 
-<p align="center"><img src="../Files/mystery.png"></p>
 
 ``` shell
 Flag: picoCTF{c0rrupt10n_1847995}
@@ -58,7 +58,17 @@ Flag: picoCTF{c0rrupt10n_1847995}
 This .tar file got tarred alot. Also available at /problems/like1000_0_369bbdba2af17750ddf10cc415672f1c.
 
 ``` shell
-Flag: picoCTF{}
+
+import tarfile
+
+fin = ".tar"
+
+for i in range(1000, -1, -1):
+    #print str(i)+fin
+    tf = tarfile.open(str(i)+fin)
+    tf.extractall()
+
+Flag: picoCTF{l0t5_0f_TAR5}
 ``` 
 
 
