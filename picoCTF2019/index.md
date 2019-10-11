@@ -4,7 +4,7 @@
 
 ```
 
-<p align="center"><img src="Files/profil.png"></p>
+<p align="center"><img src="Files/profile.png"></p>
 
 
 ``` shell
