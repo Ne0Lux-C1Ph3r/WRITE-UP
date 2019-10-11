@@ -555,3 +555,6 @@ A_b1t_0f_b1t_sh1fTiNg_df5f8ed440
 
 Flag: picoCTF{A_b1t_0f_b1t_sh1fTiNg_df5f8ed440}
 ```
+
+<p align="left"><a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/blob/master/picoCTF2019/index.md">Return to the main menu</a></p>
+
