@@ -337,3 +337,7 @@ if the_music == a_guitar:
 Flag: picoCTF{BONJOVI}
 
 ```
+
+
+<p align="left"><a href="https://github.com/Ne0Lux-C1Ph3r/WRITE-UP/blob/master/picoCTF2019/index.md">Return to the main menu</a></p>
+
