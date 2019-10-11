@@ -39,8 +39,18 @@ Flag: picoCTF{not_all_spaces_are_created_equal_f006c045f6b402ce4bc749dc7a262380}
 <h3>c0rrupt - Points: 250</h3>
 We found this file. Recover the flag. You can also find the file in /problems/c0rrupt_0_1fcad1344c25a122a00721e4af86de13.
 
+
 ``` shell
-Flag: picoCTF{}
+Modify header, chunk IDAT and CRC.
+``` 
+<p align="center"><img src="Files/co0.png"></p>
+
+<p align="center"><img src="Files/co1.png"></p>
+
+<p align="center"><img src="Files/mystery.png"></p>
+
+``` shell
+Flag: picoCTF{c0rrupt10n_1847995}
 ``` 
 
 
