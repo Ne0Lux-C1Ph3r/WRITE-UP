@@ -1,6 +1,5 @@
 
 
-
 <h1 align="center">Reverse Engineering</h1>
 
 
@@ -35,6 +34,11 @@ class VaultDoorTraining {
         return password.equals("w4rm1ng_Up_w1tH_jAv4_f2dd1ba95aa");
     }
 }
+
+Response:
+To know how to read !!!
+
+w4rm1ng_Up_w1tH_jAv4_f2dd1ba95aa
 
 Flag: picoCTF{w4rm1ng_Up_w1tH_jAv4_f2dd1ba95aa}
 ```
@@ -103,6 +107,11 @@ class VaultDoor1 {
     }
 }
 
+Response:
+Loop to read the flag in a dictionary or a list !!!
+
+d35cr4mbl3_tH3_cH4r4cT3r5_55870d
+
 Flag: picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_55870d}
 ```
 
@@ -135,6 +144,11 @@ asm1:
 	<+57>:	pop    ebp
 	<+58>:	ret   
 	
+Response:
+if 0x50f is greater than 0x3b9 ===> jump to <+34>
+if 0x520 is greater than 0x477 ===> jump to <+51>
+FLAG ====> 0x610+0x11 ====> 0x621
+
 Flag: 0x621
 ```
 
@@ -189,6 +203,40 @@ class VaultDoor3 {
     }
 }
 
+Response:
+In https://ideone.com/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		char[] buffer = new char[32];
+		int i;
+		String s = new String(buffer);
+		String password = "jU5t_a_sna_3lpm11g041_u_4_m5ra46";
+		for (i=0; i<8; i++) {
+            buffer[i] = password.charAt(i);
+        }
+        for (; i<16; i++) {
+            buffer[i] = password.charAt(23-i);
+        }
+        for (; i<32; i+=2) {
+            buffer[i] = password.charAt(46-i);
+        }
+        for (i=31; i>=17; i-=2) {
+            buffer[i] = password.charAt(i);
+        }
+        System.out.println(buffer);
+	}
+}
+
+jU5t_a_s1mpl3_an4gr4m_4_u_150a16
+
 Flag: picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_150a16}
 ```
 
@@ -215,7 +263,11 @@ asm2:
 	<+43>:	leave  
 	<+44>:	ret    
 	
-Flag: 0x
+	
+Response:
+0x1e + ((0x67a8-0x8)/0xfa+1) ===> 0x89
+
+Flag: 0x89
 ```
 
 
@@ -270,38 +322,15 @@ class VaultDoor4 {
     }
 }
 
+Response:
+Fisrt line: ascii
+Second line: hex
+Third line: octal
+Fourth line: normal
 
-Flag: picoCTF{}
-```
+jU5t_4_bUnCh_0f_bYt3s_3a724c8f92
 
-
-<h3>Tapping - Points: 200</h3>
-Theres tapping coming in from the wires. What's it saying nc 2019shell1.picoctf.com 49914.
-
-``` shell
-Flag: picoCTF{}
-```
-
-
-<h3>asm3 - Points: 300</h3>
-What does asm3(0xd46c9935,0xdfe28722,0xb335450f) return? Submit the flag as a hexadecimal value (starting with '0x'). NOTE: Your submission for this question will NOT be in the normal flag format. Source located in the directory at /problems/asm3_2_376e88472c6a9317470a12cc31d506a4.
-
-``` shell
-
-asm3:
-	<+0>:	push   ebp
-	<+1>:	mov    ebp,esp
-	<+3>:	xor    eax,eax
-	<+5>:	mov    ah,BYTE PTR [ebp+0xa]
-	<+8>:	shl    ax,0x10
-	<+12>:	sub    al,BYTE PTR [ebp+0xf]
-	<+15>:	add    ah,BYTE PTR [ebp+0xe]
-	<+18>:	xor    ax,WORD PTR [ebp+0x10]
-	<+22>:	nop
-	<+23>:	pop    ebp
-	<+24>:	ret  
-	
-Flag: 0x
+Flag: picoCTF{jU5t_4_bUnCh_0f_bYt3s_3a724c8f92}
 ```
 
 
@@ -360,7 +389,12 @@ class VaultDoor5 {
     }
 }
 
-Flag: picoCTF{}
+Response:
+base64 = JTYzJTMwJTZlJTc2JTMzJTcyJTc0JTMxJTZlJTY3JTVmJTY2JTcyJTMwJTZkJTVmJTYyJTYxJTM1JTY1JTVmJTM2JTM0JTVmJTM3JTM1JTM3JTY1JTMxJTY0JTMwJTMw
+
+c0nv3rt1ng_fr0m_ba5e_64_757e1d00
+
+Flag: picoCTF{c0nv3rt1ng_fr0m_ba5e_64_757e1d00}
 ```
 
 
@@ -412,7 +446,18 @@ class VaultDoor6 {
     }
 }
 
-Flag: picoCTF{}
+Response:
+IMPORTANT LINE ===> "byte[] myBytes = {.......}" AND "if (((passBytes[i] ^ 0x55) - myBytes[i]) != 0)"
+XOR operation with 0x55
+
+0x6e 0x30 0x74 0x5f 0x6d 0x55 0x63 0x48 
+0x5f 0x68 0x34 0x72 0x44 0x33 0x72 0x5f
+0x74 0x48 0x34 0x6e 0x5f 0x78 0x30 0x72
+0x5f 0x35 0x37 0x63 0x32 0x38 0x39 0x32
+
+n0t_mUcH_h4rD3r_tH4n_x0r_57c2892
+
+Flag: picoCTF{n0t_mUcH_h4rD3r_tH4n_x0r_57c2892}
 ```
 
 
@@ -489,5 +534,24 @@ class VaultDoor7 {
     }
 }
 
-Flag: picoCTF{}
+Response:
+x = [1096770097, 1952395366, 1600270708, 1601398833, 1716808014, 1734304870, 895891557, 1681142832]
+
+for i in x:
+	print bin(i)
+	
+Gives 0 missing at the beginning.
+
+01000001 01011111 01100010 00110001
+01110100 01011111 00110000 01100110
+01011111 01100010 00110001 01110100
+01011111 01110011 01101000 00110001
+01100110 01010100 01101001 01001110
+01100111 01011111 01100100 01100110
+00110101 01100110 00111000 01100101
+01100100 00110100 00110100 00110000
+
+A_b1t_0f_b1t_sh1fTiNg_df5f8ed440
+
+Flag: picoCTF{A_b1t_0f_b1t_sh1fTiNg_df5f8ed440}
 ```
