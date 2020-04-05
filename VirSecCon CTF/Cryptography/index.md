@@ -1,5 +1,5 @@
 
-<h1 align="center">Web Exploitation</h1>
+<h1 align="center">Cryptography</h1>
 
 
 
@@ -9,19 +9,13 @@
 <p align="center"><img src="../Files/"></img></p>
 
 ``` shell
-I am registered as john.
-My cookie is:
-jwt=
+
 ```
 
 <p align="center"><img src="../Files/"></img></p>
 
 ``` shell
-I use jwtcat for crack secret key.
 
-
-And on https://jwt.io/ 
-I modified my cookie for admin user and with key.
 ```
 
 <p align="center"><img src="../Files/"></img></p>
