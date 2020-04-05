@@ -6,6 +6,7 @@
 <h3>Stegosaurus 70 points</h3>
 
 Scientists are struggling with a new mystery: we thought the dinosaurs were gone, but this one has returned! Hmmm... can you solve this mystery?
+
 Download the file below: stegosaurus.png
 
 <p align="center"><img src="../Files/stegosaurus.png"></img></p>
@@ -22,6 +23,7 @@ Flag: LLS{you_stegsolved_the_mystery}
 <h3>Winter Wonderland 80 points</h3>
 
 It’s the holiday season! But hmm… they must be hiding something under all that cheer!
+
 Download the file below: winter_wonderland.txt
 
 <p align="center"><img src="../Files/snow_flag.png"></img></p>
@@ -37,6 +39,7 @@ Flag: LLS{let_it_snow_baby_let_it_reindeer}
 <h3>Elessbe 80 points</h3>
 
 Ah, bonjour mon bon ami! Bienvenue à la capture du drapeau! J’ai entendu dire que vous étiez fan de la stéganographie! Avez-vous déjà entendu parler d’un outil appelé zsteg?
+
 Download the file below: elessbe.png
 
 <p align="center"><img src="../Files/elessbe.png"></img></p>
